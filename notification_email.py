@@ -3,22 +3,20 @@
 # Lukas Stuffer
 # IG: _lukasstuffer_
 
-
 import smtplib
 from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
-
 
 class EmailNotification:
 
 	def __init__(self, user: str, pwd: str, receivers: str, smtp=['smtp.domain.com', 587], subject='Test E-Mail', body='E-Mail sent successfully.'):
 
-		self.user 		= user
-		self.pwd 		= pwd
-		self.smtp		= smtp
+		self.user 	= user
+		self.pwd 	= pwd
+		self.smtp	= smtp
 		self.receivers 	= receivers
 		self.subject 	= subject
-		self.body 		= body
+		self.body 	= body
 
 
 	def send(self):
@@ -27,7 +25,7 @@ class EmailNotification:
 
 			for receiver in self.receivers:
 
-				message 			= MIMEMultipart()
+				message 		= MIMEMultipart()
 				message["From"] 	= self.user
 				message["To"] 		= receiver
 				message["Subject"] 	= self.subject

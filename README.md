@@ -1,4 +1,5 @@
-Send an e-mail via python3. Attention: it must run via your own mail server, as Google has discontinued the service in 2024.
+Send an e-mail via python3.
+**Attention:** it must run via your own mail server, as Google has discontinued the service in 2024.
 
 Example (main.py):
 ```python

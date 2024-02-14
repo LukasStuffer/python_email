@@ -13,7 +13,8 @@ Copy `notification_email.py` into your project folder
    ─ main.py
    ─ notification_email.py
 ```
-Example (main.py):
+Example (main.py)
+-
 ```python
 #!/usr/bin/python3
 
